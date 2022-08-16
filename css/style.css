@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preloader {
+  position: fixed;
+  background: #277BC0 url("/imgs/Spinner-0.9s-200px.gif") no-repeat center;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+}/*# sourceMappingURL=style.css.map */

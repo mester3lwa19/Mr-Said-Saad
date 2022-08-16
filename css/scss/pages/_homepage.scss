@@ -1,0 +1,35 @@
+.landing {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+  .left-content {
+    width: 45%;
+    margin-top: 20px;
+    h1 {
+      color: $light-yellow;
+      font-size: 60px;
+    }
+    p {
+      margin-top: 50px;
+      line-height: 1.8;
+      color: $semi-white;
+      font-size: 25px;
+    }
+  }
+  .right-content {
+    background-color: $semi-white;
+    width: 40%;
+    position: relative;
+    right: 330px;
+    .image {
+      position: relative;
+      top: 10px;
+      left: 60px;
+      width: 500px;
+      img {
+        width: 500px;
+      }
+    }
+  }
+}

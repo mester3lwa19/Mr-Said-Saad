@@ -48,6 +48,10 @@ header nav .logo a {
   color: #277BC0;
   font-size: 30px;
   font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+header nav .logo a:hover {
+  color: #FFB200;
 }
 header nav .nav-links {
   margin-left: 70px;
@@ -63,6 +67,10 @@ header nav .nav-links ul li a {
   color: #277BC0;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+header nav .nav-links ul li a:hover {
+  color: #FFB200;
 }
 
 @media (min-width: 770px) {
@@ -98,7 +106,7 @@ header nav .nav-links ul li a {
     display: none;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
-    z-index: 100;
+    z-index: 9999;
   }
   header .side-bar ul {
     margin-top: 30px;
@@ -119,10 +127,10 @@ header nav .nav-links ul li a {
   }
 }
 .landing {
-  width: 1024px;
   display: flex;
   flex-direction: row;
   margin-right: 70px;
+  z-index: 1;
 }
 .landing .left-content {
   width: 45%;
@@ -142,14 +150,41 @@ header nav .nav-links ul li a {
   background-color: #FFF4CF;
   width: 40%;
   position: relative;
-  right: 330px;
+  right: 150px;
 }
 .landing .right-content .image {
   position: relative;
   top: 10px;
-  left: 60px;
+  left: 0px;
   width: 500px;
 }
 .landing .right-content .image img {
   width: 500px;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+  }
+  .landing .left-content {
+    width: 100%;
+  }
+  .landing .left-content h1 {
+    font-size: 30px;
+  }
+  .landing .left-content p {
+    font-size: 25px;
+  }
+  .landing .right-content {
+    width: 100%;
+    right: 0;
+    left: 50px;
+  }
+  .landing .right-content .image {
+    width: 250px;
+    left: 0;
+  }
+  .landing .right-content .image img {
+    width: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */

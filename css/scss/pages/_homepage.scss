@@ -1,8 +1,8 @@
 .landing {
-  width: 1024px;
   display: flex;
   flex-direction: row;
   margin-right: 70px;
+  z-index: 1;
   .left-content {
     width: 45%;
     margin-top: 20px;
@@ -21,15 +21,41 @@
     background-color: $semi-white;
     width: 40%;
     position: relative;
-    right: 330px;
+    right: 150px;
     .image {
       position: relative;
       top: 10px;
-      left: 60px;
+      left: 0px;
       width: 500px;
       img {
         width: 500px;
       }
     }
   }
+}
+@media (max-width:768px) {
+    .landing {
+        flex-direction: column;
+        .left-content {
+            width: 100%;
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        .right-content {
+            width: 100%;
+            right: 0;
+            left: 50px;
+            .image {
+                width: 250px;
+                left: 0;
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
 }

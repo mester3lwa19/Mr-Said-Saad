@@ -1,12 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.preloader {
-    position: fixed;
-    background:#277BC0 url("/imgs/Spinner-0.9s-200px.gif") no-repeat center;
-    height: 100vh;
-    width: 100%;
-    z-index: 1000;
-}
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+@import 'scss/helpers/vars';
+@import 'scss/components/buttons';
+@import 'scss/globel/globel';
+@import 'scss/layout/footer';
+@import 'scss/layout/header';
+@import 'scss/pages/homepage';

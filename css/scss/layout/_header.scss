@@ -1,0 +1,93 @@
+header {
+  height: 100px;
+  nav {
+    background-color: $semi-white;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin-right: 70px;
+      margin-top: 2px;
+      cursor: pointer;
+      a {
+        color: $main;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .nav-links {
+      margin-left: 70px;
+      ul {
+        display: flex;
+        li {
+          margin: 10px 10px;
+          font-size: 20px;
+          a {
+            color: $main;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 770px) {
+  .toggle {
+    display: none;
+  }
+  .side-bar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    nav {
+      .logo {
+        margin-right: 20px;
+      }
+      .nav-links {
+        ul {
+          display: none;
+        }
+      }
+      .toggle {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        left: 20px;
+        margin-top: 5px;
+        cursor: pointer;
+
+        i {
+          color: $main;
+        }
+      }
+    }
+    .side-bar {
+      width: 100%;
+      background-color: $semi-white;
+      height: 700px;
+      display: none;
+      flex-direction: column;
+      transition: all 0.5s ease-in-out;
+      ul {
+        margin-top: 30px;
+        margin-right: 20px;
+        li {
+          font-size: 25px;
+          margin-bottom: 10px;
+          a {
+            color: $main;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .display {
+      display: flex !important;
+      z-index: 100;
+    }
+  }
+}

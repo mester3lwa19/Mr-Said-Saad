@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+body {
+  font-family: "El Messiri", sans-serif;
+  background-color: #277bc0;
+}
+
+.container {
+  width: 1024px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +24,95 @@
 
 .preloader {
   position: fixed;
-  background: #277BC0 url("/imgs/Spinner-0.9s-200px.gif") no-repeat center;
+  background: #277bc0 url("/imgs/Spinner-0.9s-200px.gif") no-repeat center;
   height: 100vh;
   width: 100%;
   z-index: 1000;
+}
+
+header {
+  height: 100px;
+}
+header nav {
+  background-color: #FFF4CF;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo {
+  margin-right: 70px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+header nav .logo a {
+  color: #277BC0;
+  font-size: 30px;
+  font-weight: 500;
+}
+header nav .nav-links {
+  margin-left: 70px;
+}
+header nav .nav-links ul {
+  display: flex;
+}
+header nav .nav-links ul li {
+  margin: 10px 10px;
+  font-size: 20px;
+}
+header nav .nav-links ul li a {
+  color: #277BC0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (min-width: 770px) {
+  .toggle {
+    display: none;
+  }
+  .side-bar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav .logo {
+    margin-right: 20px;
+  }
+  header nav .nav-links ul {
+    display: none;
+  }
+  header nav .toggle {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  header nav .toggle i {
+    color: #277BC0;
+  }
+  header .side-bar {
+    width: 100%;
+    background-color: #FFF4CF;
+    height: 700px;
+    display: none;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+  }
+  header .side-bar ul {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  header .side-bar ul li {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  header .side-bar ul li a {
+    color: #277BC0;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  header .display {
+    display: flex !important;
+    z-index: 100;
+  }
 }/*# sourceMappingURL=style.css.map */
